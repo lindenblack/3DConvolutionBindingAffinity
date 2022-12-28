@@ -1,0 +1,11 @@
+for dir in C:/Users/Linden/GitHub/thing2/3DQSAR/data/EllenPLS/*;  
+do 
+	sed -i 1d $dir
+	echo '$$$$' >> $dir
+done
+
+for dir in C:/Users/Linden/GitHub/thing2/3DQSAR/data/EllenPLS/*; 
+do 
+	cat $dir >> C:/Users/Linden/GitHub/thing2/3DQSAR/data/EllenPLS.sdf
+	echo $dir
+done

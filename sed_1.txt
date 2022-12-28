@@ -1,0 +1,4 @@
+for dir in C:/Users/Linden/GitHub/thing2/3DQSAR/data/EllenRawData/reduced/*; 
+do 
+	sed -i 's/*/H/' $dir
+done

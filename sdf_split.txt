@@ -1,0 +1,13 @@
+p="C:/Users/Linden/GitHub/thing2/3DQSAR/data/EllenRawData/sdf/"
+cd C:/Users/Linden/GitHub/thing2/3DQSAR/data/temp/
+for dir in C:/Users/Linden/GitHub/thing2/3DQSAR/data/EllenRawData/sdf/*; 
+do 
+	filename=$(basename -- "$dir")
+	mkdir $filename
+	cd $filename
+	molecule="${p}${filename}"
+	csplit $molecule --quiet  --suffix-format="%d.sdf" '/$$$$/' '{*}'
+	cd C:/Users/Linden/GitHub/thing2/3DQSAR/data/temp
+	echo $molecule
+	
+Done
