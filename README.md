@@ -31,7 +31,6 @@ This repo contains:
 #7 DATASETS
     - Datasets are too large to be submitted and too large for github
     - Datasets can be shared through the cloud by request
-    - Email lindenblack@gmail.com for access to the data
 
 #8 PLSdf.txt
     - affinity values for 25 snapshots per ligand PLS test
